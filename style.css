@@ -1,3 +1,38 @@
 .modal {
     background: #c6d0ff7a;
 }
+.image-select {
+    display: flex;
+    gap: 20px;
+}
+
+.image-option {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid transparent;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.image-option img {
+    width: 90px;
+    height: 50px;
+}
+
+.image-option:hover {
+    border-color: #007bff;
+}
+
+.image-option.selected {
+    border-color: #28a745;
+    background-color: #e9f7e6;
+}
+
+.image-option span {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
